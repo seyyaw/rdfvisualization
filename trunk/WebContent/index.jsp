@@ -7,9 +7,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="rdfvisualize" method="get"> 
-		Name: <input type="text" name="pname"><br>
-				<input type="submit" value="Get Info">
+		<form action="controller" method="get"> 
+				<!-- Name: <input type="text" name="pname"><br>  -->
+				Display The content of Triple Store.
+				<br>  <input type="submit" value="visualize">
+				
 		</form>
 </body>
 </html>
