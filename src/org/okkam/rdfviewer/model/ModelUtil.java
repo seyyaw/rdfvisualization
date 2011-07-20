@@ -33,18 +33,5 @@ public class ModelUtil {
 			qe.close();
 		}
 		return rdfResults;
-	}
-	public static void main(String argv[]){
-		ModelUtil modelitil=new ModelUtil();
-		MultiMap multimap=modelitil.getResult();
-		Iterator it=multimap.keySet().iterator();
-		while(it.hasNext()){
-			MultiMap propObjresult=(MultiMap) it.next();
-			String subject=multimap.get(propObjresult).toString();
-			Iterator propObjIt=propObjresult.keySet().iterator();
-			String property=propObjIt.next().toString();
-			String object=propObjresult.get(property).toString();
-			System.out.println("Subject: "+subject+"Property: "+property+"Object: "+object);
-	}
 	}	
 }
