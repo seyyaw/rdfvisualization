@@ -11,7 +11,18 @@
 				<!-- Name: <input type="text" name="pname"><br>  -->
 				Display The content of Triple Store.
 				<br>  <input type="submit" value="visualize">
-				
-		</form>
+		<table border="1">
+			<tr>
+				<td><strong>subject</strong></td>
+				<td><strong>property</strong></td>
+				<td><strong>object</strong></td>
+			</tr>
+			<tr>
+				<td>${DataView.subject}</td>
+				<td>${DataView.property}</td>
+				<td>${DataView.object}</td>
+			</tr>
+		</table>
+	</form>
 </body>
 </html>

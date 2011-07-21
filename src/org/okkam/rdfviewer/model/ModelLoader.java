@@ -38,6 +38,7 @@ public class ModelLoader {
 	
 	private List<Rule> rules = null ;
 	
+
 	private OntModel ensModel = null;
 	
 	private static String baseUri = null;
@@ -49,8 +50,8 @@ public class ModelLoader {
 	private ModelLoader() {
 		
 		loadInputModel() ;
-		loadOutputModel() ;
-		loadRules() ;		
+		//loadOutputModel() ;
+		//loadRules() ;		
 		
 	}
 	
