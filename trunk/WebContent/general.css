@@ -1,0 +1,13 @@
+{margin:0;padding:0;}
+ol.timeline{
+list-style:none;font-size:1.2em;
+}
+ol.timeline li{
+display:none;position:relative;
+padding:.7em 0 .6em 0;
+border-bottom:1px dashed #000;
+line-height:1.1em;
+background-color:#D3E7F5;
+height:45px}
+ol.timeline li:first-child{
+border-top:1px dashed #000;}
