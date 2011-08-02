@@ -6,7 +6,7 @@
 <title>E-bookshop</title>
 <style type="text/css">
 body {
-	background-color: gray;
+	background-color: cyan;
 	font-size
 	=10pt;
 }
@@ -14,7 +14,7 @@ H1 {
 	font-size: 20pt;
 }
 table {
-	background-color: white;
+	background-color: yellow;
 }
 </style>
 </head>
@@ -26,7 +26,7 @@ table {
 		// Scriptlet 1: check whether the book list is ready
 		Vector booklist = (Vector) session.getValue("ebookshop.list");
 		if (booklist == null) {
-			response.sendRedirect("/ebookshop/eshop");
+			response.sendRedirect("eshop");
 		} else {
 	%>
 	<form name="addForm" action="eshop" method="POST">
