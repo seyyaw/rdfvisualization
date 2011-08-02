@@ -6,7 +6,7 @@ import javax.servlet.*;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 
-@WebServlet("/shopping")
+@WebServlet("/eshop")
 public class ShoppingServlet extends HttpServlet {
 	public void init(ServletConfig conf) throws ServletException {
 		super.init(conf);
@@ -32,7 +32,7 @@ public class ShoppingServlet extends HttpServlet {
 			blist.addElement("Foundations of Security. Daswani/Kern/Kesavan $39.99");
 			session.setAttribute("ebookshop.list", blist);
 			ServletContext sc = getServletContext();
-			RequestDispatcher rd = sc.getRequestDispatcher("/");
+			RequestDispatcher rd = sc.getRequestDispatcher("/start.jsp");
 			rd.forward(req, res);
 		} else {
 			if (do_this.equals("checkout")) {
@@ -79,7 +79,7 @@ public class ShoppingServlet extends HttpServlet {
 				} // if (..add..
 				session.setAttribute("ebookshop.cart", shoplist);
 				ServletContext sc = getServletContext();
-				RequestDispatcher rd = sc.getRequestDispatcher("/");
+				RequestDispatcher rd = sc.getRequestDispatcher("/start.jsp");
 				rd.forward(req, res);
 			} // if (..checkout..else
 		} // if (do_this..
