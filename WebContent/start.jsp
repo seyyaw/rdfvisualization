@@ -10,8 +10,11 @@ body {
 	font-size
 	=10pt;
 }
-H1 {
-	font-size: 20pt;
+h1 {
+   font-family: Georgia, "Times New Roman", Times, serif;
+   font-size: 18px;
+   font-weight: bold;
+   color: #000000;
 }
 table {
 	background-color: yellow;
