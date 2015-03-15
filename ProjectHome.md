@@ -1,0 +1,1 @@
+The aim of this project is to visualize RDF dataset from Triple Store Using Java Servlets and JSP.
